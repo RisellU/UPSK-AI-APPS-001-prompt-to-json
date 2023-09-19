@@ -13,7 +13,7 @@ const createCredential = async (name, apiKey) => {
   };
   const { data } = await axios.post(`${baseUrl}/credentials`, payload);
   return data.id;
-};
+}; 
 
 const createFlow = async (name, credentialId) => {
   const nodes = chatFlow.nodes.map((node) => {
